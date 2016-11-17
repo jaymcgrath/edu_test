@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'edu_test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_env_variable('DATABASE_NAME'),
-        'USER': get_env_variable('DATABASE_USER'),
-        'PASSWORD': get_env_variable('DATABASE_PASSWORD'),
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'edu_test',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
